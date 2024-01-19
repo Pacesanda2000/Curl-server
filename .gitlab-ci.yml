@@ -22,8 +22,8 @@ stages:
 test_vsphere_connectivity:
   stage: test
   script:
-    #- sudo yum update -y  # Pro CentOS/RHEL
-    #- sudo yum install -y curl  # Pro CentOS/RHEL
+    - sudo yum update -y  # Pro CentOS/RHEL
+    - sudo yum install -y curl  # Pro CentOS/RHEL
     - curl -v https://vlab.dual.edu:443 # Upravte port podle potřeby
     - echo "work done"
  
