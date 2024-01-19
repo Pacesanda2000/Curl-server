@@ -22,8 +22,9 @@ stages:
 test_vsphere_connectivity:
   stage: test
   script:
-    - apt-get update  # Pro Debian/Ubuntu
-    - apt-get install -y curl  # Pro Debian/Ubuntu
+    - yum update -y  # Pro CentOS/RHEL
+    - yum install -y curl  # Pro CentOS/RHEL
     - curl -v http://vlab.dual.edu # Upravte port podle potřeby
     - echo "work done" 
+
 
