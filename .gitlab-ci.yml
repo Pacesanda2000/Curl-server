@@ -22,7 +22,8 @@ stages:
 test_vsphere_connectivity:
   stage: test
   script:
-    - apk update  # Pro Alpine Linux
-    - apk add curl  # Pro Alpine Linux
+    - apt-get update  # Pro Debian/Ubuntu
+    - apt-get install -y curl  # Pro Debian/Ubuntu
     - curl -v http://vlab.dual.edu # Upravte port podle potřeby
-    - echo "work done"
+    - echo "work done" 
+
