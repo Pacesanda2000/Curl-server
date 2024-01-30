@@ -26,7 +26,7 @@ test_vsphere_connectivity:
   script:
     - sudo yum update -y  # Pro CentOS/RHEL
     - sudo yum install -y telnet 
-    - telnet 10.207.0.20 22
+    - telnet 10.207.0.18 22
  
 
 
