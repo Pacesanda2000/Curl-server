@@ -25,8 +25,8 @@ test_vsphere_connectivity:
   stage: test
   script:
     - sudo yum update -y  # Pro CentOS/RHEL
-    - sudo yum install -y telnet 
-    - telnet 10.207.0.18 22
+    - sudo yum install -y ping
+    - ping 10.207.0.18 
 
 
 
