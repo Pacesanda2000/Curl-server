@@ -1,3 +1,3 @@
-This pipeline chcecking server accesibility throught CURL tool
+This pipeline verifies server availability with CURL tool.
 
-Put IP address instead of IP adress variable and test 
+Put IP address instead of $IP-address variable and test.
