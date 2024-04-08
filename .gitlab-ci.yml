@@ -1,6 +1,6 @@
 variables:
   GIT_SSL_NO_VERIFY: "true"
-  IP_ADDRESS: "XXX.XXX.XXX.XXX"
+  IP-ADDRESS: "XXX.XXX.XXX.XXX"
 
 stages:
   - test
@@ -10,7 +10,7 @@ test_vsphere_connectivity:
   script:
     - sudo yum update -y  
     - sudo yum install -y curl 
-    - curl $IP_ADDRESS
+    - curl $IP-ADDRESS
 
 
 
