@@ -1,5 +1,6 @@
 variables:
   GIT_SSL_NO_VERIFY: "true"
+  IP_ADDRESS: "XXX.XXX.XXX.XXX"
 
 stages:
   - test
@@ -8,8 +9,8 @@ test_vsphere_connectivity:
   stage: test
   script:
     - sudo yum update -y  
-    - sudo yum install -y telnet 
-    - telnet 10.207.0.18 22
+    - sudo yum install -y curl 
+    - curl $IP_ADDRESS
 
 
 
